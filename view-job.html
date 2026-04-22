@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>View Job</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* BODY BACKGROUND */
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("foster-city-ca-united-states-260nw-1786310984.webp") center/cover no-repeat fixed;
+}
+
+/* DARK OVERLAY */
+
+.overlay{
+    min-height:100vh;
+    padding:20px;
+    color:white;
+}
+
+/* HEADER */
+
+.header{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    border-radius:10px;
+}
+
+/* JOB DETAILS CARD */
+
+.job-details{
+    max-width:900px;
+    margin:80px auto;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    padding:30px;
+    border-radius:15px;
+    color:white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* HEADINGS */
+
+.job-details h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.job-details h3{
+    margin-top:20px;
+    color:#ffcc00;
+}
+
+/* LIST */
+
+.job-details ul{
+    margin-left:20px;
+}
+
+/* BUTTONS */
+
+.flex-btn{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+/* APPLY BUTTON */
+
+.btn{
+    background:#ff4b2b;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:6px;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#e63e1f;
+}
+
+/* SAVE BUTTON */
+
+.save{
+    background:none;
+    border:1px solid #fff;
+    color:white;
+    padding:12px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.save:hover{
+    background:white;
+    color:black;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<!-- HEADER -->
+<header class="header">
+    <a href="home.html" class="logo"><i class="fas fa-briefcase"></i> JobHunt</a>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Account</a>
+    </nav>
+
+    <a href="#" class="btn">Post Job</a>
+</header>
+
+<!-- JOB DETAILS -->
+<section class="job-details">
+
+    <h1>Senior Web Designer</h1>
+    <p><a href="view-company.html" style="color:#ff4b2b;">IT Infosys Co.</a></p>
+
+    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+
+    <h3>Salary</h3>
+    <p>10,000 - 25,000 per month</p>
+
+    <h3>Benefits</h3>
+    <p>Work from home, Health Insurance</p>
+
+    <h3>Schedule</h3>
+    <p>Day Shift</p>
+
+    <h3>Requirements</h3>
+    <ul>
+        <li>Education: Graduate</li>
+        <li>Age: 18+</li>
+        <li>Language: Hindi, English</li>
+        <li>Experience: 2+ years</li>
+    </ul>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>HTML, CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>PHP</li>
+    </ul>
+
+    <h3>Description</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+    <div class="flex-btn">
+        <button class="btn">Apply Now</button>
+        <button class="save"><i class="far fa-heart"></i> Save Job</button>
+    </div>
+
+</section>
+
+</div>
+
+</body>
+</html>

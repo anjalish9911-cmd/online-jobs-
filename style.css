@@ -1,0 +1,410 @@
+/* ===== 1. FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* ===== 2. VARIABLES ===== */
+:root{
+    --main-color:#2980b9;
+    --red:red;
+    --light-color:#777;
+    --light-bg:#eee;
+    --black:#2c3e50;
+    --white:red;
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0,.2);
+}
+
+/* ===== 3. RESET ===== */
+*{
+    font-family: 'Comfortaa', cursive;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    outline:none;
+    border:none;
+}
+
+/* ===== 4. BODY ===== */
+body{
+    min-height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("1773579622912.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ===== 5. HEADER ===== */
+.header{
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    background:#fff;
+    box-shadow:var(--box-shadow);
+    z-index:1000;
+}
+
+.header .flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2rem;
+}
+
+.header .logo{
+    font-size:2.5rem;
+    color:var(--black);
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size:1.6rem;
+    color:var(--light-color);
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+}
+
+/* ===== 6. BUTTON ===== */
+.btn{
+    display:inline-block;
+    padding:1rem 2rem;
+    font-size:1.6rem;
+    color:#fff;
+    background:var(--main-color);
+    border-radius:.5rem;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:var(--black);
+}
+
+/* ===== 7. INPUT ===== */
+.input{
+    width:100%;
+    padding:1rem;
+    margin:1rem 0;
+    background:var(--light-bg);
+    border-radius:.5rem;
+    font-size:1.4rem;
+}
+
+/* ===== 8. HOME ===== */
+.home-page{
+    min-height:100vh;
+    width:100%;
+    background: url("Image_-_Free_Job_Sites_.jpeg.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+}
+
+.home form{
+    background:url(Image_-_Free_Job_Sites_.jpeg) center/cover no-repeat;
+    padding:2rem;
+    width:40rem;
+    border-radius:.5rem;
+    box-shadow:var(--box-shadow);
+}
+
+/* ===== 9. CATEGORY ===== */
+.category .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,25rem);
+    gap:1.5rem;
+    justify-content:center;
+    padding:2rem;
+}
+
+.category .box{
+    background:#fff;
+    padding:2rem;
+    border-radius:.5rem;
+    box-shadow:var(--box-shadow);
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    transition:.2s;
+}
+
+.category .box:hover{
+    transform:translateY(-5px);
+}
+
+.category .box i{
+    font-size:2rem;
+    color:var(--main-color);
+}
+
+/* ===== 10. LOGIN ===== */
+.account-form-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:2rem;
+}
+
+.account-page{
+    min-height:100vh;
+    background: url("images.jfif") no-repeat center center;
+    background-size: cover;
+}
+/* ===== 11. CONTACT ===== */
+.heading{
+    text-align:center;
+    font-size:2.5rem;
+    margin:2rem 0;
+    color:var(--black);
+}
+
+.contact .box-container{
+    display:flex;
+    gap:2rem;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:2rem;
+}
+
+.contact .box{
+    background:skyblue;
+    padding:2rem;
+    border-radius:.5rem;
+    box-shadow:var(--box-shadow);
+    text-align:center;
+    width:30rem;
+}
+
+.contact .box i{
+    font-size:2.5rem;
+    color:var(--main-color red);
+    margin-bottom:1rem;
+}
+
+.contact .box a,
+.contact .box p{
+    display:block;
+    margin:.5rem 0;
+    color:var(--light-color);
+}
+
+/* ===== 12. CONTACT FORM ===== */
+.contact-form{
+    display:flex;
+    justify-content:center;
+    padding:2rem;
+}
+
+.contact form {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 2rem;
+    width: 40rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ===== 13. FOOTER ===== */
+.footer{
+    background:#fff;
+    padding:2rem;
+    margin-top:2rem;
+}
+
+.footer .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,20rem);
+    gap:2rem;
+    justify-content:center;
+}
+
+.footer .credit{
+    text-align:center;
+    margin-top:2rem;
+    font-size:1.6rem;
+    color:var(--light-color);
+}
+
+/* ===== 14. RESPONSIVE ===== */
+@media(max-width:768px){
+    html{ font-size:55%; }
+
+    .header .flex{
+        flex-direction:column;
+        gap:1rem;
+    }
+
+    #menu-btn{
+        display:inline-block;
+        font-size:2rem;
+        cursor:pointer;
+    }
+
+    .header .navbar{
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background:#fff;
+        display:none;
+        flex-direction:column;
+        text-align:center;
+        box-shadow:var(--box-shadow);
+    }
+
+    .header .navbar.active{
+        display:flex;
+    }
+
+    .header .navbar a{
+        display:block;
+        margin:1rem 0;
+    }
+}
+body{
+    font-family: Arial;
+    margin:0;
+}
+
+.header{
+    background:#2c3e50;
+    padding:15px;
+}
+
+.flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+    font-size:20px;
+    text-decoration:none;
+}
+
+.navbar a{
+    color:#fff;
+    margin:0 10px;
+    text-decoration:none;
+}
+
+.btn{
+    background:#ff6600;
+    color:#fff;
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:30px;
+    margin:20px 0;
+}
+
+/* ===== CONTACT SECTION MODERN STYLE ===== */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Box Container Center */
+.contact .box-container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Individual Box */
+.contact .box{
+    background: linear-gradient(135deg,#5dade2,#85c1e9);
+    padding: 25px;
+    border-radius: 12px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.contact .box:hover{
+    transform: translateY(-8px);
+}
+
+/* Icon Style */
+.contact .box i{
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+/* Text */
+.contact .box a,
+.contact .box p{
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+}
+
+/* FORM STYLE */
+
+.contact form{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.contact form h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+
+.contact form .input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+
+.contact form .btn{
+    width: 100%;
+    margin-top: 10px;
+}
+/* ===== CONTACT PAGE BACKGROUND IMAGE ===== */
+
+.contact-page{
+    min-height:100vh;
+    width:100%;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("stock-photo-aerial-view-industrial-commerce-office-buildings.jfif") no-repeat center center;
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Title white color */
+.section-title{
+    color:white;
+}

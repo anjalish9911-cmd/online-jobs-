@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- ✅ Font Awesome (icons ke liye) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- ✅ CSS (IMPORTANT: agar style.css same folder me hai to yahi sahi hai) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="account-page"></body>
+
+<header class="header">
+    <section class="flex">
+
+        <a href="home.html" class="logo">
+            <i class="fas fa-briefcase"></i> JobHunt.
+        </a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about us</a>
+            <a href="jobs.html">all jobs</a>
+            <a href="contact.html">contact us</a>
+            <a href="login.html">account</a>
+        </nav>
+
+        <a href="#" class="btn">post job</a>
+
+    </section>
+</header>
+
+<!-- LOGIN FORM -->
+<div class="account-form-container">
+
+    <section class="account-form">
+        <form action="" method="post">
+
+            <h3>Welcome Back!</h3>
+
+            <input type="email" required name="email" maxlength="50"
+            placeholder="enter your email" class="input">
+
+            <input type="password" required name="pass" maxlength="20"
+            placeholder="enter your password" class="input">
+
+            <p>don't have an account? <a href="register.html">register now</a></p>
+
+            <input type="submit" value="login now" name="submit" class="btn">
+
+        </form>
+    </section>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - JobHunt</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* HEADER */
+.header{
+    background:#111;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#ff4b2b;
+}
+
+.btn{
+    background:#ff4b2b;
+    color:#fff;
+    padding:8px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e63e1f;
+}
+
+/* ABOUT HERO */
+.about{
+    min-height:85vh;
+    background:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+.about::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.65);
+}
+
+.about-box{
+    position:relative;
+    max-width:750px;
+    padding:30px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    animation:fadeIn 1s ease-in-out;
+}
+
+.about-box h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.about-box p{
+    line-height:1.6;
+    font-size:16px;
+}
+
+/* BUTTON HOVER ANIMATION */
+.about-box .btn{
+    display:inline-block;
+    margin-top:15px;
+}
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    font-size:28px;
+    margin:50px 0 20px;
+    font-weight:bold;
+}
+
+/* REVIEWS */
+.reviews{
+    padding:20px;
+    background-image: url(istock.jpg);
+}
+
+.box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.review-box{
+    background:grey;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.review-box:hover{
+    transform:translateY(-5px);
+}
+
+.review-box img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-top:10px;
+}
+
+.stars i{
+    color:gold;
+    margin-bottom:10px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .about-box h1{
+        font-size:28px;
+    }
+
+    .navbar{
+        display:grey;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <a href="home.html" class="logo"><i class="fas fa-briefcase"></i> JobHunt</a>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Account</a>
+    </nav>
+
+    <a href="#" class="btn">Post Job</a>
+</header>
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="about-box">
+        <h1>About Us</h1>
+        <p>
+            JobHunt helps job seekers find the best opportunities and connect with top companies.
+            Our platform is designed to make hiring simple, fast, and effective for everyone.
+        </p>
+        <a href="jobs.html" class="btn">View Jobs</a>
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<div class="section-title">Top Reviews</div>
+
+<section class="reviews">
+    <div class="box-container">
+
+        <div class="review-box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Best job portal I have ever used!</p>
+            <img src="woman-suit-transparent-background_1297464-3335.avif">
+            <h3>Nidhi Sharma</h3>
+        </div>
+
+        <div class="review-box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Very smooth and easy interface.</p>
+            <img src="young-beautiful-joyful-woman-smiling-working-laptop-office-image-young-beautiful-joyful-woman-smiling-365159714.webp">
+            <h3>Astha Gautam</h3>
+        </div>
+
+        <div class="review-box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Very smooth and easy interface.</p>
+            <img src="https://randomuser.me/api/portraits/women/2.jpg">
+            <h3>Mahepara Khatoon</h3>
+        </div>
+
+        <div class="review-box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Got job within few days!</p>
+            <img src="pretty-young-girl-brunette-office-worker-sitting-table-laptop-cute-smiling-106665706.webp">
+            <h3>Angli Sharma</h3>
+        </div>
+
+        <div class="review-box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Very smooth and easy interface.</p>
+            <img src="young-pensive-man-holding-his-260nw-247316944.webp">
+            <h3>Vineet Kumar</h3>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
